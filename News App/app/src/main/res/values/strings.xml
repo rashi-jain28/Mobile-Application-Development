@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HW04</string>
+    <string name="categories" />
+    <string name="Go">Go</string>
+    <string name="Title" />
+    <string name="PublishedAt">PublishedAt</string>
+    <string name="Description">description</string>
+    <string name="Show">Show</string>
+    <string name="hidden">Hidden</string>
+</resources>
