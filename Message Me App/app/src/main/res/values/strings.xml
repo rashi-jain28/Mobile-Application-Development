@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">inClass13</string>
+    <string name="Login">Login</string>
+    <string name="send">Send</string>
+    <string name="to">To:</string>
+    <string name="From">From</string>
+</resources>
