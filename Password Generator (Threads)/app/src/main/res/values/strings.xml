@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">InClass04</string>
+    <string name="SelectPassword">Select Passwords count:</string>
+    <string name="selectPwdLen">Select Passwords length:</string>
+    <string name="password">Password:</string>
+    <string name="generatePwdThread">Generate Passwords (Thread)</string>
+    <string name="generatePwdAsync">Generate Passwords (Async Task)</string>
+    <string name="Welcome">Welcome to the application..Wait for 3 seconds</string>
+</resources>
