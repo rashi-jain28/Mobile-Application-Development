@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InClass06</string>
+    <string name="Gobtn">Go</string>
+    <string name="Title">title</string>
+    <string name="PublishedAt">PublishedAt</string>
+    <string name="Description">Description</string>
+    <string name="search">Show Categories</string>
+</resources>
