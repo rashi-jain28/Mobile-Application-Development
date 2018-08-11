@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.coolp.mainactivity.DisplayActivity">
+
+    <TextView
+        android:id="@+id/studentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="74dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="31dp"
+        android:layout_toEndOf="@+id/sdept"
+        android:layout_toRightOf="@+id/sdept"
+        android:text="@string/StudentInfo"
+        android:textColor="@android:color/background_dark"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="139dp"
+        tools:text="@string/StudentInfo" />
+
+    <TextView
+        android:id="@+id/sName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/studentInfo"
+        android:layout_marginTop="36dp"
+        android:text="@string/Sname"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <TextView
+        android:id="@+id/semail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sName"
+        android:layout_marginTop="29dp"
+        android:text="@string/semail" />
+
+    <TextView
+        android:id="@+id/sdept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ibMood"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:text="@string/sdpt" />
+
+    <TextView
+        android:id="@+id/smood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ibMood"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        android:text="@string/smood" />
+
+    <TextView
+        android:id="@+id/stuNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sName"
+        android:layout_alignBottom="@+id/sName"
+        android:layout_alignLeft="@+id/studentInfo"
+        android:layout_alignStart="@+id/studentInfo" />
+
+    <TextView
+        android:id="@+id/stuEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/semail"
+        android:layout_alignBottom="@+id/semail"
+        android:layout_alignLeft="@+id/stuNameText"
+        android:layout_alignStart="@+id/stuNameText" />
+
+    <TextView
+        android:id="@+id/stuDeptText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sdept"
+        android:layout_alignLeft="@+id/stuEmailText"
+        android:layout_alignStart="@+id/stuEmailText" />
+
+    <TextView
+        android:id="@+id/stumoodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/smood"
+        android:layout_alignBottom="@+id/smood"
+        android:layout_alignLeft="@+id/stuDeptText"
+        android:layout_alignStart="@+id/stuDeptText" />
+
+    <ImageButton
+        android:id="@+id/ibName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/semail"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/ic_icon" />
+
+    <ImageButton
+        android:id="@+id/ibEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/stuNameText"
+        app:srcCompat="@drawable/ic_icon" />
+
+    <ImageButton
+        android:id="@+id/ibDpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ibEmail"
+        app:srcCompat="@drawable/ic_icon" />
+
+    <ImageButton
+        android:id="@+id/ibMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ibDpt"
+        android:layout_marginTop="29dp"
+        app:srcCompat="@drawable/ic_icon" />
+
+</RelativeLayout>
