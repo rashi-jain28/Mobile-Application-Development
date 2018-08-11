@@ -1,0 +1,29 @@
+package example.coolp.inclass07;
+
+import java.io.Serializable;
+
+/**
+ * Created by coolp on 2/19/2018.
+ */
+
+public class Sources implements Serializable {
+    private String id;
+    private String name;
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
