@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.rashi.class08.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/nameTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="@string/Name"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/emailTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="@string/Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="@+id/nameTextEdit"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextEdit" />
+
+        <TextView
+            android:id="@+id/deptEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/Department"
+            app:layout_constraintStart_toStartOf="@+id/dptGroupEdit"
+            app:layout_constraintTop_toBottomOf="@+id/emailTextEdit" />
+
+
+        <TextView
+            android:id="@+id/textmoodEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/MoodText"
+            app:layout_constraintStart_toStartOf="@+id/seekBar"
+            app:layout_constraintTop_toBottomOf="@+id/dptGroupEdit" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="213dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="17dp"
+            app:layout_constraintStart_toStartOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/textmoodEdit" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+
+        <RadioGroup
+            android:id="@+id/dptGroupEdit"
+            android:layout_width="276dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="11dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deptEditText">
+
+            <RadioButton
+                android:id="@+id/SIS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SIS" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CS" />
+
+            <RadioButton
+                android:id="@+id/BIO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BIO" />
+
+            <RadioButton
+                android:id="@+id/Others"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Others" />
+        </RadioGroup>
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

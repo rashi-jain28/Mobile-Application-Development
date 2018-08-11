@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Class08</string>
+    <!--<string name="app_name">MainActivity</string>-->
+    <string name="Name">Name</string>
+    <string name="Email">Email</string>
+    <string name="Department">Department:</string>
+    <string name="MoodText">Your current mood:</string>
+    <string name="Submit">Submit</string>
+    <string name="SIS">SIS</string>
+    <string name="BIO">BIO</string>
+    <string name="Others">Others</string>
+    <string name="StudentInfo">Student Information</string>
+    <string name="Sname">Name:</string>
+    <string name="semail">Email:</string>
+    <string name="sdpt">Department:</string>
+    <string name="smood">Mood:</string>
+    <string name="editInfo">Edit Information</string>
+    <string name="save">Save</string>
+    <string name="cs">CS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
