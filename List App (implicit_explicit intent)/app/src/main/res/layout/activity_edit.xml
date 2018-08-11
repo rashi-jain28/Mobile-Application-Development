@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rashi.hw02.EditActivity">
+
+    <EditText
+        android:id="@+id/taskEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Task"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:text="@string/Task" />
+
+    <EditText
+        android:id="@+id/ddEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/taskEdit"
+        android:layout_alignStart="@+id/taskEdit"
+        android:layout_below="@+id/taskEdit"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ttEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ddEdit"
+        android:layout_alignStart="@+id/ddEdit"
+        android:layout_below="@+id/ddEdit"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="textPersonName"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/priorityEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ttEdit"
+        android:layout_alignStart="@+id/ttEdit"
+        android:layout_below="@+id/ttEdit"
+        android:layout_marginTop="37dp"
+        android:text="@string/priority" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/priorityEdit"
+        android:layout_alignStart="@+id/priorityEdit"
+        android:layout_below="@+id/priorityEdit"
+        android:layout_marginTop="31dp">
+
+        <RadioButton
+            android:id="@+id/rb1Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/high" />
+
+        <RadioButton
+            android:id="@+id/rb2Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_weight="1"
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/rb3Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/low" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"
+        android:text="@string/save" />
+
+</RelativeLayout>

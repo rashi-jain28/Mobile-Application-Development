@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HW02</string>
+    <string name="Task" />
+    <string name="Date">Date</string>
+    <string name="time">Time</string>
+    <string name="priority">Priority</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="save">Save</string>
+    <string name="TaskDate">Task Date</string>
+    <string name="TaskTime">Task Time</string>
+    <string name="TaskPriority">Task Priority</string>
+    <string name="Task_title">Task Title</string>
+    <string name="TaskCount" />
+</resources>
